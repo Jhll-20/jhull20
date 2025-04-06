@@ -1,10 +1,15 @@
 .menu {
 display: block;
+color: #0077b6;
 text-align: left;
-font-size: 25px;
-margin: 6px 0;
+font-weight: 500;
+margin: 8px 0;
 padding: 6px;
+transition: background-color 0.2s ease;
 border-radius: 4px;
+}
+.menu a:hover{
+  bacground-color: #cde9ff;
 }
 .header{
   padding: 0px;
