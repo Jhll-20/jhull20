@@ -1,23 +1,68 @@
-.menu {
-display: block;
-color: #0077b6;
-text-align: left;
-font-weight: 500;
-margin: 8px 0;
-padding: 6px;
-transition: background-color 0.2s ease;
-border-radius: 4px;
-}
-.menu a:hover{
-  bacground-color: #cde9ff;
-}
 .header{
-  padding: 0px;
-  font-size: 40px;
+  grid-area:header;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(4, 36, 54);
+  color: #ffffff;
 }
 .container{
-  font-size: 30px;
+  font-size: 18px;
+  max-width: 1000px; 
+  margin: auto;
+  padding: 10px;
+  line-height: 1.6;  
 }
-a { 
-  color: rgb(239, 255, 247);
+.menu {
+  grid-area: menu;
+  color: #000000;
+  align-items: stretch;
+  text-align: left;
+  font-weight: 500;
+  margin: 8px 0;
+  height: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+  a{
+    color: rgb(239, 255, 247);
+  }
+  .quiz-container {
+ grid-area: y;
+ background-color: rgb(0, 0, 0);
+ padding: 20px;
+ border-radius: 8px;
+ width: 100;
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ -o-border-radius: 8px;
+}
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
 }
