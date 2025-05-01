@@ -2,18 +2,17 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(4, 36, 54);
-  overflow-x: hidden;
 }
 
-/* Global link styling */
 a {
   color: rgb(239, 255, 247);
   text-decoration: underline;
 }
 
-/* Layout grid container */
+/* Grid container */
 .main-layout {
   display: grid;
   grid-template-areas:
@@ -46,10 +45,11 @@ a {
 .menu {
   grid-area: menu;
   background-color: rgb(104, 188, 137);
-  color: #000;
+  color: #000000;
   font-weight: 500;
   padding: 10px;
   border-radius: 4px;
+  text-align: left;
 }
 
 /* Content */
@@ -62,8 +62,31 @@ a {
   border-radius: 4px;
 }
 
+/* Responsive layouts */
+
+/* Tablets and small desktops */
+@media (min-width: 601px) {
+  .main-layout {
+    grid-template-areas:
+      "header header"
+      "menu content";
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Larger desktops */
+@media (min-width: 1025px) {
+  .main-layout {
+    grid-template-areas:
+      "header header"
+      "menu content";
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
 /* Quiz */
 .quiz-container {
+  grid-area: y;
   background-color: rgb(78, 145, 172);
   padding: 20px;
   border-radius: 8px;
@@ -115,25 +138,3 @@ button {
   width: 100%;
   cursor: pointer;
 }
-
-/* Tablet layout (menu above content) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .main-layout {
-    grid-template-areas:
-      "header"
-      "menu"
-      "content";
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Desktop layout (menu left, content right) */
-@media (min-width: 1025px) {
-  .main-layout {
-    grid-template-areas:
-      "header header"
-      "menu content";
-    grid-template-columns: 1fr 3fr;
-  }
-}
-
