@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="style.css">
 
-  <style>
+<style>
 .container {
   display: grid;
   grid-template-areas:
@@ -15,19 +15,30 @@
   gap: 15px;
 }
 .container > div {
-    background-color: rgb(78, 172, 125);
-    padding: 50px;
+  background-color: rgb(78, 172, 125);
+  padding: 50px;
 }
 .container > div.header {
   text-align: center;
+  grid-area: header; 
 }
-.container > div.menu{
+.container > div.menu {
   grid-area: menu;
 }
 .container > div.content {
   grid-area: content;
 }
 
+/*  for mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "menu"
+      "content";
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body>
