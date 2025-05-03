@@ -15,12 +15,12 @@ const myQuestions =  [
     correctAnswer: "d"
   },
   {
-    question: "What does HTTP stand for?",
+    question: "What does HTML stand for?",
     answers: {
-        a: "Hypertext Transfer Protocol",
-        b: "Hyper Test Transport Protocol",
-        c: "Hypertext Transmission Protocol",
-        d: "Hypertext transfer Process"
+        a: "Hypertext Markup Language",
+        b: "Hyper Test Media Language",
+        c: "Hyper Translate Mixed Language",
+        d: "Hypertext Markup Loop"
     },
     correctAnswer: "a"
   },
