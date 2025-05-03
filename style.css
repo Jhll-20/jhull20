@@ -55,11 +55,20 @@ a {
 /* Content */
 .container {
   grid-area: content;
-  background-color: rgb(104, 188, 137);
+  background-color: rgb(17, 94, 74);
   font-size: 18px;
   padding: 10px;
   line-height: 1.6;
   border-radius: 4px;
+}
+/*HTML Table*/
+table, th, td {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff00;
+  tr:nth-child(even) {background-color: #aae499e7;}
+  tr:nth-child(odd) {background-color: #8ff0a99f;}
 }
 
 /* Responsive layouts */
