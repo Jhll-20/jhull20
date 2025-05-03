@@ -74,44 +74,12 @@ table, th, td {
 /* Responsive layouts */
 
 /* Tablets and small desktops */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-    padding: 0 8px;
-  }
-
+@media (min-width: 600px) {
   .main-layout {
     grid-template-areas:
-      "header"
-      "menu"
-      "content";
-    grid-template-columns: 1fr;
-    padding: 5px;
-  }
-
-  .header {
-    font-size: 18px;
-    padding: 12px;
-  }
-
-  .menu, .container, .quiz-container {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  table, th, td {
-    font-size: 13px;
-    padding: 6px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  input[type="text"] {
-    font-size: 14px;
-    padding: 8px;
+      "header header"
+      "menu content";
+    grid-template-columns: 1fr 3fr;
   }
 }
 
